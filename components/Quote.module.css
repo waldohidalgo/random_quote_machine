@@ -1,0 +1,116 @@
+.cita {
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 1rem;
+  font-family: "STIX Two Text", serif;
+  padding-bottom: 1rem;
+}
+
+.cita_contenido {
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.typewriter_contenedor {
+  background-color: #eee;
+  display: inline-block;
+}
+.twitter_button {
+  margin-top: 1rem;
+  padding: 5px;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.cita_autor {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.boton_new_quote {
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  border-width: 1px;
+  border-style: solid;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.boton_new_quote:hover,
+.twitter_button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+/*
+Loaders
+*/
+
+.contenedor_loader {
+  margin-block: 2rem;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  margin-inline: auto;
+  display: grid;
+  border: 4px solid #0000;
+  border-radius: 50%;
+  border-color: #ccc #0000;
+  animation: l16 1s infinite linear;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2px;
+  border: inherit;
+  border-radius: 50%;
+}
+.loader::before {
+  border-color: #f03355 #0000;
+  animation: inherit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+.loader::after {
+  margin: 8px;
+}
+@keyframes l16 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* HTML: <div class="loader"></div> */
+.loadertext {
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  display: inline-grid;
+}
+.loadertext:before,
+.loadertext:after {
+  content: "Loading...";
+  grid-area: 1/1;
+  mask: linear-gradient(90deg, #000 50%, #0000 0) 0 50%/2ch 100%;
+  -webkit-mask: linear-gradient(90deg, #000 50%, #0000 0) 0 50%/2ch 100%;
+  animation: l11 1s infinite cubic-bezier(0.5, 220, 0.5, -220);
+}
+.loadertext:after {
+  mask-position: 1ch 50%;
+  -webkit-mask-position: 1ch 50%;
+  --s: -1;
+}
+@keyframes l11 {
+  100% {
+    transform: translateY(calc(var(--s, 1) * 0.1%));
+  }
+}

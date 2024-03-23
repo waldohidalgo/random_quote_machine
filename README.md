@@ -1,34 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Random Quote Machine: Primer Proyecto para obtener la certificación Front End Development Libraries de Freecodecamp
 
-## Getting Started
+El presente repositorio contiene el código con el cual he contruido el primer proyecto de 5 proyectos en total requeridos para obtener la certificación [Front End Development Libraries](https://www.freecodecamp.org/learn/front-end-development-libraries) de Freecodecamp. El proyecto utiliza las siguientes dependencias:
 
-First, run the development server:
+[![React](https://badgen.net/badge/React/Version%2017/000000?icon=https://simpleicons.vercel.app/react/36dff8)](https://react.dev/) [![Nextjs](https://badgen.net/badge/Nextjs/Version%2012/000000?icon=https://simpleicons.vercel.app/nextdotjs/fff)](https://nextjs.org/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Además de las librerias: **chroma-js**, **react-icons** y **typewriter-effect**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+La API de citas que he utilizado se encuentra en el siguiente [link](https://github.com/lukePeavey/quotable?tab=readme-ov-file)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 1-Requisitos
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+El proyecto presenta los siguientes requisitos:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![Requisitos del Proyecto](./screenshots/requisitos.webp)
 
-## Learn More
+## 2-Screenshots
 
-To learn more about Next.js, take a look at the following resources:
+A continuación muestro un screenshot de una cita aleatoria:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Cita ejemplo](./screenshots/cita.webp)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Cuando se hace click en el botón **New Quote** se genera una nueva cita aleatoria:
 
-## Deploy on Vercel
+![Cita ejemplo dos](./screenshots/cita2.webp)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 3-Superación de **TODOS** los test
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Cuando ejecuto los test de la **TEST SUITE** de **freecodecamp** seleccionando el proyecto **Random Quote Machine** se muestra un mensaje de aprobación de TODOS los 12 test requisitos para superar este primer proyecto:
+
+![Aprobación de TODOS los test](./screenshots/aprobacion_todos_test.webp)
